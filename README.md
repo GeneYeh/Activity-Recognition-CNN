@@ -9,7 +9,7 @@ This repository contains **3060 daily activity data** are collected from **six v
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-###Prerequisites
+### Prerequisites
 
 - install [cuDNN](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html)
 
