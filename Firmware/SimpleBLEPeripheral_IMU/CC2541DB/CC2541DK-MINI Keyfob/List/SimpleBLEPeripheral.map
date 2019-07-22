@@ -1,0 +1,7 @@
+Error[e16]: Segment SLEEP_CODE (size: 0x9 align: 0) is too long for segment definition. At least 0x1 more bytes needed. The problem occurred while processing the segment placement command "-Z(CODE)SLEEP_CODE=_SLEEP_CODE_SPACE_START-_SLEEP_CODE_SPACE_END", where at the moment of placement the available memory ranges were "CODE:7ff8-7fff"
+   Reserved ranges relevant to this placement:
+   CODE:7ff8-7fff       SLEEP_CODE
+   BIT:0-7              BREG
+   BIT:80-97            SFR_AN
+   BIT:a0-af            SFR_AN
+   BIT:b8-c7            SFR_AN
