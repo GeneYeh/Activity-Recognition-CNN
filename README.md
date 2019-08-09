@@ -3,6 +3,8 @@
 ## Abstract
 This thesis proposes a real-time activity recognition system based on data from several [wearable inertial sensors](https://epl.tw/ecomini/). They are worn at the user’s right wrist, waist, and right ankle to collect acceleration and angular velocity data, which are then transmitted via Bluetooth to a computer. The data are used to train a convolutional neural network (CNN) model to recognize 13 types of activities, including sitting, standing, walking, going upstairs, going downstairs, drinking water, brushing teeth, cleaning, jogging, opening a door, stretching, lying down, and walking while using a mobile phone. The trained model has been ported to Tensorflow Lite running on [Raspberry Pi](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/) to enable edge processing. The latency for recognizing the first motion takes 2.6 seconds, and subsequent ones are 1.325 seconds. Experimental results show that among the six human subjects, our model achieves high accuracy of 98.62% and 99.84% for leave-one-out cross-validation and 10-fold cross-validation, respectively.
 
+![Sensor's location](https://drive.google.com/open?id=1x1UZd_EpOfTQ3_bliYz2yj6FTDDUyXqt)
+
 ### Daily activity data
 This repository contains **3060 daily activity data** are collected from **six volunteers** equipped with several [wearable inertial sensors](https://epl.tw/ecomini/). The inertial sensor's sample rate is 125.
 
@@ -22,8 +24,9 @@ pip install numpy scipy matplotlib pandas keras
 pip install --upgrade tensorflow-gpu==1.5.0
 ```
 
-
 ## System overview
+![System overview](https://drive.google.com/open?id=1SoLGT_UGnlP5rbLSgABalZb1h87rZSwy)
+
 There are five steps to implement the system:
 
 1. Collected raw data from sensors and stored with pickle type.
@@ -44,7 +47,7 @@ There are five steps to implement the system:
 
 
 ## Demo [link1](https://www.youtube.com/watch?v=coPhCzglX8w) [link2](https://www.youtube.com/watch?v=xjqU5sxhCuw)
-
+![Demo](https://drive.google.com/open?id=1pdNXepOfO0jxwxvaFz4waJ5f_EqSNEfD)
 
 ## More Information
 For more details about the methods and the performance, please see the attached thesis.pdf.
