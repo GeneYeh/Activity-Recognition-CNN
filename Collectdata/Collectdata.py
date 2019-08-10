@@ -191,7 +191,7 @@ def imuThread(node, i):
     global save_data_flag, savedFileNum, lock
     print("imuThread start")
 
-    file_num = 10
+    file_num = 1
     savedFlag = False
 
     while True:
